@@ -19,8 +19,8 @@ public class LoginGeneratorTest {
 
     @Test
     public void generateLoginForNomAndPrenom() throws Exception {
-        loginService.addLogin(loginGenerator.generateLoginForNomAndPrenom("Ralling", "John"));
-        assertThat(loginService.loginExists("JRAL2"), is(true));
+        loginService.addLogin(loginGenerator.generateLoginForNomAndPrenom("Du", "Paul"));
+        assertThat(loginService.loginExists("PDU"), is(true));
     }
 
 }
